@@ -113,9 +113,16 @@ dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
         
         <ul>
             <li>
-        <b> GraphFM: Improving Large-Scale GNN Training via Feature Momentum </b><br>
+        <b> GraphFM: Improving Large-Scale GNN Training via Feature Momentum <a href="https://arxiv.org/abs/2206.07161">[arxiv]</a> </b><br>
         Haiyang Yu*, Limei Wang*, Bokun Wang*, Meng Liu, Tianbao Yang, and Shuiwang Ji (*Equal Contribution)<br> 
         In Proc. of the 39th International Conference on Machine Learning (ICML), 2022. <br>
+        <dl class="togList">
+          <dt onclick="tog(this)">
+            <span>+</span> <font color="blue">abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2" color = #5D6D7E>Training of graph neural networks (GNNs) for large-scale node classification is challenging. A key difficulty lies in obtaining accurate hidden node representations while avoiding the neighborhood explosion problem. Here, we propose a new technique, named feature momentum (FM), that uses a momentum step to incorporate historical embeddings when updating feature representations. We develop two specific algorithms, known as GraphFM-IB and GraphFM-OB, that consider in-batch and out-of-batch data, respectively. GraphFM-IB applies FM to in-batch sampled data, while GraphFM-OB applies FM to out-of-batch data that are 1-hop neighborhood of in-batch data. We provide a convergence analysis for GraphFM-IB and some theoretical insight for GraphFM-OB. Empirically, we observe that GraphFM-IB can effectively alleviate the neighborhood explosion problem of existing methods. In addition, GraphFM-OB achieves promising performance on multiple large-scale graph datasets.</font>          </dd> 
+        </dl>
 		</li>
         </ul>
         
