@@ -46,6 +46,23 @@ toOpen =!dd.style.display;
 dd.style.display = toOpen? 'block':''
 dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
 }
+
+var Alink = document.getElementById('f100');
+Alink.addEventListener("click", function(){ 
+    ShowFile();
+}); 
+
+function ShowFile(){
+var foo = document.getElementById('foo');
+var obj = document.createElement('object')
+
+obj.setAttribute("data","https://cs.stanford.edu/people/jcjohns/papers/iccv15/JohnsonICCV2015.bib");
+obj.setAttribute('width',300);
+obj.setAttribute('height',100);
+
+
+foo.appendChild(obj);
+}
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -102,7 +119,7 @@ dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
         <ul>
             <li>
         <b> IntSGD: Adaptive Floatless Compression of Stochastic Gradients <br>
-            <a href="https://openreview.net/forum?id=pFyXqxChZc">[openreview]</a> <a href="https://arxiv.org/abs/2102.08374">[arxiv]</a> <a href="22_intsgd.bib">[bib]</a> <a href="https://github.com/bokunwang1/intsgd">[code]</a> <a href="https://www.konstmish.com/uploads/posters/22-intsgd.pdf">[poster]</a> <a href="https://www.konstmish.com/uploads/slides/22-intsgd.pdf">[slides]</a></b><br>
+            <a href="https://openreview.net/forum?id=pFyXqxChZc">[openreview]</a> <a href="https://arxiv.org/abs/2102.08374">[arxiv]</a> <a href="22_intsgd.bib" id='f100'>[bib]</a> <a href="https://github.com/bokunwang1/intsgd">[code]</a> <a href="https://www.konstmish.com/uploads/posters/22-intsgd.pdf">[poster]</a> <a href="https://www.konstmish.com/uploads/slides/22-intsgd.pdf">[slides]</a></b><br>
         Konstantin Mishchenko, Bokun Wang, Dmitry Kovalev, and Peter Richtárik<br> 
         In Proc. of the 10th International Conference on Learning Representations (ICLR), 2022 (Spotlight). <br>
 				<dl class="togList">
