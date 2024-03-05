@@ -1,0 +1,199 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokun Wang's Home Page</title>
+    <style>
+  body {background-color: whitesmoke;}
+  h1 {color: black;}
+  p {color: black;}
+.togList
+{
+
+}
+
+.togList dt
+{
+cursor: pointer; cursor: hand;
+}
+
+.togList dt span
+{
+
+color: blue;
+}
+
+.togList dd
+{
+width: 680px;
+padding-bottom: 15px;
+}
+ 								
+html.isJS .togList dd
+{
+display: none;
+}
+a:link {
+  color: #800000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #800000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+</style>
+
+<script type="text/javascript">
+
+/* Only set closed if JS-enabled */
+document.getElementsByTagName('html')[0].className = 'isJS';
+
+function tog(dt)
+{
+var display, dd=dt;
+/* get dd */
+do{ dd = dd.nextSibling } while(dd.tagName!='DD');
+toOpen =!dd.style.display;
+dd.style.display = toOpen? 'block':''
+dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
+}
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> 
+</head>
+<body leftmargin="9">
+<table class="imgtable" border="0" width="65%" id="AutoNumber1" style="float: left; position: absolute; left: 20%; top:26px">
+<body style="font-family:Helvetica">
+  <tr>
+    <td width="100%" height="200">
+    <table border="0" width="100%" id="AutoNumber2">
+      <tr>
+        <td width="15%" align="middle"><font face="Arial">
+        <img border="0" src="bokun_hd.jpg" style="max-width:80%;height:auto;"></font> <br>
+            <a href=https://qiqi-helloworld.github.io/><font size = "3.0vw">(image credits)</font></a>
+          </td>
+        <td width="45%" align="left">
+            <h1></h1><b><font face="Bradley Hand, cursive" color="black" size = "7.0vw">&nbsp;&nbsp;Bokun Wang</b></h1><br>
+            
+                <p class="MsoNormal"><font face="Helvetica" size="3.5vw">I am a Ph.D. student at Texas A&M University. I got my bachelor's degree in Computer<br> Science from University of Electronic Science and Technology of China (UESTC) in 2018.<br> My current research interest is  continuous optimization. <br>
+         <h1><b><font face="Papyrus" color="black" size = "7.0vw"><a href=mailto:bokunw.wang@gmail.com target=_blank rel=noopener aria-label=envelope><i class="fa fa-envelope-square big-icon"></i></a><a href=https://scholar.google.com/citations?user=H9GqvAYAAAAJ&hl=en target=_blank rel=noopener aria-label=google-scholar>
+<i class="ai ai-google-scholar-square big-icon"></i>
+</a> <a href=https://github.com/bokunwang1 target=_blank rel=noopener aria-label=github>
+<i class="fa fa-github-square big-icon"></i> </a><a href="https://www.linkedin.com/in/bokun-wang-6b7437252/"><i class="fa fa-linkedin-square"></i></a> 
+        </font></b></h1>
+        </font></td>
+      </tr>
+    </table>
+    <br />
+    </td>
+    
+  </tr>
+    
+  <tr>
+    <td width="100%">
+	<h2>
+        <font face="Helvetica" color="black" size="5.0vw"><b>Selected Manuscripts</font></b> 
+        <!--
+        <a href=pub.html><font face="Helvetica" color="#800000" size="4.5vw"><b>[Full List]</b></a>
+        -->
+        </font></h2> 
+    
+        <ul>
+        <li, class="fa fa-toggle-right">
+            <font face="Helvetica" size = "3.5vw" color="#3F4142"><b>ALEXR: An Optimal Single-Loop Algorithm for Convex Finite-Sum Coupled Compositional Stochastic Optimization </b><br>
+        Bokun Wang and Tianbao Yang<br> 
+        Preprint, 2023. <a href="https://arxiv.org/abs/2312.02277">[arxiv]</a> <br></font>
+				<dl class="togList">
+          <dt onclick="tog(this)">
+          <font color="#551A8B"> + abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> This paper revisits a class of convex Finite-Sum Coupled Compositional Stochastic Optimization (cFCCO) problems with many applications, including group distributionally robust optimization (GDRO), reinforcement learning, and learning to rank. To better solve these problems, we introduce a unified family of efficient single-loop primal-dual block-coordinate proximal algorithms, dubbed ALEXR. This algorithm leverages block-coordinate stochastic mirror ascent updates for the dual variable and stochastic proximal gradient descent updates for the primal variable. We establish the convergence rates of ALEXR in both convex and strongly convex cases under smoothness and non-smoothness conditions of involved functions, which not only improve the best rates in previous works on smooth cFCCO problems but also expand the realm of cFCCO for solving more challenging non-smooth problems such as the dual form of GDRO. Finally, we present lower complexity bounds to demonstrate that the convergence rates of ALEXR are optimal among first-order block-coordinate stochastic algorithms for the considered class of cFCCO problems.</font>           </dd> 
+        </dl></li>
+        </ul>  
+        
+        <ul>
+            <li, class="fa fa-toggle-right">
+                <font face="Helvetica" size = "3.5vw" color="#3F4142"><b> Finite-Sum Coupled Compositional Stochastic Optimization: Theory and Applications </b><br>
+        Bokun Wang and Tianbao Yang<br> 
+        In Proc. of the 39th International Conference on Machine Learning (ICML), 2022. <br>
+        <a href="https://proceedings.mlr.press/v162/wang22ak.html">[paper]</a> <a href="https://arxiv.org/abs/2202.12396">[arxiv (with updates)]</a> <a href="https://github.com/bokun-wang/my_bib/blob/main/pmlr-v162-wang22ak.bib">[bib]</a> <a href="https://github.com/bokun-wang/SOX">[code]</a> <a href="ICML22-SOX/ICML22-SOX-Poster.pdf">[poster]</a> <a href="ICML22-SOX/ICML22-SOX-compressed.pdf">[slides]</a> <br></font>
+				<dl class="togList">
+          <dt onclick="tog(this)">
+          <font color="#551A8B"> + abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> This paper studies stochastic optimization for a sum of compositional functions, where the inner-level function of each summand is coupled with the corresponding summation index. We refer to this family of problems as finite-sum coupled compositional optimization (FCCO). It has broad applications in machine learning for optimizing non-convex or convex compositional measures/objectives such as average precision (AP), p-norm push, listwise ranking losses, neighborhood component analysis (NCA), deep survival analysis, deep latent variable models, etc., which deserves finer analysis. Yet, existing algorithms and analyses are restricted in one or other aspects. The contribution of this paper is to provide a comprehensive convergence analysis of a simple stochastic algorithm for both non-convex and convex objectives. Our key result is the improved oracle complexity with the parallel speed-up by using the moving-average based estimator with mini-batching. Our theoretical analysis also exhibits new insights for improving the practical implementation by sampling the batches of equal size for the outer and inner levels. Numerical experiments on AP maximization, NCA, and p-norm push corroborate some aspects of the theory.</font>           </dd> 
+        </dl></li>
+        </ul>  
+        
+        <ul>
+            <li, class="fa fa-toggle-right">
+        <font face="Helvetica" size = "3.5vw" color="#3F4142"><b> IntSGD: Adaptive Floatless Compression of Stochastic Gradients</b> <br>
+        Konstantin Mishchenko, Bokun Wang, Dmitry Kovalev, and Peter Richtárik<br> 
+        In Proc. of the 10th International Conference on Learning Representations (ICLR), 2022 (Spotlight). <br>
+         <a href="https://openreview.net/pdf?id=pFyXqxChZc">[paper]</a> <a href="https://arxiv.org/abs/2102.08374">[arxiv]</a> <a href="https://github.com/bokun-wang/my_bib/blob/main/22_intsgd.bib">[bib]</a> <a href="https://github.com/bokunwang1/intsgd">[code]</a> <a href="https://www.konstmish.com/uploads/posters/22-intsgd-poster.pdf">[poster]</a> <a href="https://www.konstmish.com/uploads/slides/22-intsgd-slides.pdf">[slides]</a> <br></font>
+				<dl class="togList">
+          <dt onclick="tog(this)">
+           <font color="#551A8B"> + abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E>We propose a family of adaptive integer compression operators for distributed Stochastic Gradient Descent (SGD) that do not communicate a single float. This is achieved by multiplying floating-point vectors with a number known to every device and then rounding to integers. In contrast to the prior work on integer compression for SwitchML by Sapio et al. (2021), our IntSGD method is provably convergent and computationally cheaper as it estimates the scaling of vectors adaptively. Our theory shows that the iteration complexity of IntSGD matches that of SGD up to constant factors for both convex and non-convex, smooth and non-smooth functions, with and without overparameterization. Moreover, our algorithm can also be tailored for the popular all-reduce primitive and shows promising empirical performance.</font>          </dd> 
+        </dl>
+            </li>
+        </ul>	
+</tr>
+<tr>
+    <td width="100%">
+	<h2><b>
+    <font face="Helvetica" color="black" size="5.0vw">Experience</font></b></h2>
+    <font size = "3.0vw">
+    <ul>
+    <li, class="fa fa-handshake-o">
+    <font face="Helvetica" size="3.0vw">Boston Office, ARM.<br> 
+    Intern advised by 
+    <a href=https://scholar.google.com/citations?user=IQbOdyYAAAAJ&hl=en>Dr. Chuteng Zhou</a> and <a href=https://scholar.google.com/citations?user=Yo_NxlcAAAAJ&hl=tr>Dr. Durmus Alp Emre Acar</a>, May 2023 - August 2023.</font><br> 
+    </li>
+    </ul>
+	    
+    <ul>
+    <li, class="fa fa-handshake-o">
+    <font face="Helvetica" size="3.0vw">King Abdullah University of Science and Technology (KAUST)<br> 
+    Remote research intern advised by 
+    <a href=https://richtarik.org>Prof. Peter Richtárik</a>, September 2020 - August 2021.</font><br> 
+    </li>
+    </ul>
+   
+    <ul>
+    <li, class="fa fa-handshake-o">
+    <font face="Helvetica" size="3.0vw">Department of Mathematics, University of California Davis (UC Davis)</font><br> 
+   <font face="Helvetica" size="3.0vw"> Research assistant advised by <a href=https://www.math.ucdavis.edu/~sqma/index.html>Prof. Shiqian Ma</a>, July 2019 - September 2019.</font><br> 
+    </li>
+    </ul> 
+</tr>
+            
+        <tr>
+    <td width="100%">
+	<h2><b>
+    <font face="Helvetica" color="black" size="5.0vw">Teaching</font></b></h2>
+        
+    <ul>
+    <li, class="fa fa-book">
+    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 32B: Introduction to Data Structures, University of California Davis.<br>  </font>
+        </li>
+      </ul>  
+     <ul>
+    <li, class="fa fa-book">
+    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 154A: Computer Architecture, University of California Davis.<br>  </font>
+        </li>
+     </ul>  
+    <ul>
+    </font>
+</tr>
+</body>
+</html>
