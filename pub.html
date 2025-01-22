@@ -61,7 +61,21 @@ dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
     <td width="100%">
 	<h2><b>
     <font face="Helvetica" color="black"><span style="font-size: 14.0pt">Publications</span></font></b></h2>
+	<ul>
+        <li, class="fa fa-toggle-right">
+            <font face="Helvetica" size = "3.5vw" color="#3F4142"><b>On Discriminative Probabilistic Modeling for Self-Supervised Representation Learning </b><br>
+        Bokun Wang, Yunwen Lei, Yiming Ying, and Tianbao Yang<br> 
+        Accepted to International Conference on Learning Representations (ICLR), 2025. <a href="https://arxiv.org/abs/2410.09156">[arxiv]</a> <br></font>
+				<dl class="togList">
+          <dt onclick="tog(this)">
+          <font color="#551A8B"> + abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> We study the discriminative probabilistic modeling problem on a continuous domain for (multimodal) self-supervised representation learning. To address the challenge of computing the integral in the partition function for each anchor data, we leverage the multiple importance sampling (MIS) technique for robust Monte Carlo integration, which can recover InfoNCE-based contrastive loss as a special case. Within this probabilistic modeling framework, we conduct generalization error analysis to reveal the limitation of current InfoNCE-based contrastive loss for self-supervised representation learning and derive insights for developing better approaches by reducing the error of Monte Carlo integration. To this end, we propose a novel non-parametric method for approximating the sum of conditional densities required by MIS through convex optimization, yielding a new contrastive objective for self-supervised representation learning. Moreover, we design an efficient algorithm for solving the proposed objective. We empirically compare our algorithm to representative baselines on the contrastive image-language pretraining task. Experimental results on the CC3M and CC12M datasets demonstrate the superior overall performance of our algorithm.</font>           </dd> 
+        </dl></li>
+        </ul>  
 
+	
         <ul>
             <li>
         <b> Towards Federated Learning with On-device Training and Communication in 8-bit Floating Point <a href="https://arxiv.org/abs/2407.02610">[paper]</a> </b><br>
