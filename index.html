@@ -133,7 +133,7 @@ dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
     <td width="100%" style="padding-left:50px">
 	<h2>
         <font face="Helvetica" color="black" size="5.0vw"><b>Recent Publications</font></b> 
-        <!--<a href=pub.html><font face="Helvetica" color="#800000" size="4.5vw"><b>[Full List]</b></a>-->
+        --<a href=pub.html><font face="Helvetica" color="#800000" size="4.5vw"><b>[Full List]</b></a>
         </font></h2> 
 <ul>
         <li, class="fa fa-toggle-right">
@@ -177,6 +177,20 @@ dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
           </dt>
           <dd>  
 	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> This paper studies stochastic optimization for a sum of compositional functions, where the inner-level function of each summand is coupled with the corresponding summation index. We refer to this family of problems as finite-sum coupled compositional optimization (FCCO). It has broad applications in machine learning for optimizing non-convex or convex compositional measures/objectives such as average precision (AP), p-norm push, listwise ranking losses, neighborhood component analysis (NCA), deep survival analysis, deep latent variable models, etc., which deserves finer analysis. Yet, existing algorithms and analyses are restricted in one or other aspects. The contribution of this paper is to provide a comprehensive convergence analysis of a simple stochastic algorithm for both non-convex and convex objectives. Our key result is the improved oracle complexity with the parallel speed-up by using the moving-average based estimator with mini-batching. Our theoretical analysis also exhibits new insights for improving the practical implementation by sampling the batches of equal size for the outer and inner levels. Numerical experiments on AP maximization, NCA, and p-norm push corroborate some aspects of the theory.</font>           </dd> 
+        </dl></li>
+        </ul>  
+
+<ul>
+        <li, class="fa fa-toggle-right">
+            <font face="Helvetica" size = "3.5vw" color="#3F4142"><b>Memory-Based Optimization Methods for Model-Agnostic Meta-Learning and Personalized Federated Learning </b><br>
+        Bokun Wang, Zhuoning Yuan, Yiming Ying, Tianbao Yang<br> 
+        In Journal of Machine Learning Research (JMLR), 24(145):1−46, 2023. <a href="https://www.jmlr.org/papers/volume24/21-1301/21-1301.pdf">[paper]</a> <br></font>
+				<dl class="togList">
+          <dt onclick="tog(this)">
+          <font color="#551A8B"> + abstract</font>
+          </dt>
+          <dd>  
+	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> In recent years, model-agnostic meta-learning (MAML) has become a popular research area. However, the stochastic optimization of MAML is still underdeveloped. Existing MAML algorithms rely on the “episode” idea by sampling a few tasks and data points to update the meta-model at each iteration. Nonetheless, these algorithms either fail to guarantee convergence with a constant mini-batch size or require processing a large number of tasks at every iteration, which is unsuitable for continual learning or cross-device federated learning where only a small number of tasks are available per iteration or per round. To address these issues, this paper proposes memory-based stochastic algorithms for MAML that converge with vanishing error. The proposed algorithms require sampling a constant number of tasks and data samples per iteration, making them suitable for the continual learning scenario. Moreover, we introduce a communication-efficient memory-based MAML algorithm for personalized federated learning in cross-device (with client sampling) and cross-silo (without client sampling) settings. Our theoretical analysis improves the optimization theory for MAML, and our empirical results corroborate our theoretical findings.</font>           </dd> 
         </dl></li>
         </ul>  
         
