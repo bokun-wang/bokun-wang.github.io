@@ -1,252 +1,258 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bokun Wang's Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokun Wang | Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-  body {background-color: whitesmoke;}
-  h1 {color: black;}
-  p {color: black;}
-.togList
-{
- 
-}
-
-.togList dt
-{
-cursor: pointer; cursor: hand;
-}
-
-.togList dt span
-{
-
-color: blue;
-} 
-
-.togList dd
-{
-width: 800px;
-padding-bottom: 15px;
-}
- 								
-html.isJS .togList dd
-{
-display: none;
-}
-a:link {
-  color: #800000;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #800000;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-</style>
-
-<script type="text/javascript">
-
-/* Only set closed if JS-enabled */
-document.getElementsByTagName('html')[0].className = 'isJS';
-
-function tog(dt)
-{
-var display, dd=dt;
-/* get dd */
-do{ dd = dd.nextSibling } while(dd.tagName!='DD');
-toOpen =!dd.style.display;
-dd.style.display = toOpen? 'block':''
-dt.getElementsByTagName('span')[0].innerhtml = toOpen? '-':'+' ;
-}
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> 
+        /* Custom styles to supplement Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the active nav link */
+        .nav-link-active {
+            color: #3b82f6; /* blue-500 */
+            font-weight: 600;
+        }
+    </style>
 </head>
-<body leftmargin=50px>
-<table class="imgtable" border="0" style="width: 800px" id="AutoNumber1" style="padding-left:50px; top:26px">
-<body style="font-family:Helvetica">
-  <tr>
-    <td width="100%" height="200">
-    <table border="0" width="100%" id="AutoNumber2">
-      <tr>
-        <td style="padding-left:50px; width: 250px" align="middle"><font face="Arial">
-        <img border="0" src="bokun_hd.jpg" style="max-width:80%;height:auto;"></font> <br>
-            <a href=https://qiqi-helloworld.github.io/><font size = "3.0vw">(image credits)</font></a>
-          </td>
-        <td style="width: 500px" align="left">
-            <h1></h1><b><font face="Bradley Hand, cursive" color="black" size = "7.0vw">&nbsp;&nbsp;Bokun Wang</b></h1><br>
-            
-            <p class="MsoNormal"><font face="Helvetica" size="3.5vw">I am a Ph.D. student in the Department of Computer Science & Engineering (CSE) at Texas A&M University supervised by <a href=https://people.tamu.edu/~tianbao-yang/>Prof. Tianbao Yang</a>. Before that, I got my master's degree in Computer Science at University of California Davis and bachelor's degree in Computer Science from University of Electronic Science and Technology of China (UESTC) in 2018. My research focuses on stochastic optimization for machine learning and AI, with an emphasis on learning from imbalanced data, self-supervised learning, and distributionally robust optimization. <br>
-         <h1><b><font face="Papyrus" color="black" size = "7.0vw"><a href=mailto:bokunw.wang@gmail.com target=_blank rel=noopener aria-label=envelope><i class="fa fa-envelope-square big-icon"></i></a><a href=https://scholar.google.com/citations?user=H9GqvAYAAAAJ&hl=en target=_blank rel=noopener aria-label=google-scholar>
-<i class="ai ai-google-scholar-square big-icon"></i>
-</a> <a href=https://github.com/bokunwang1 target=_blank rel=noopener aria-label=github>
-<i class="fa fa-github-square big-icon"></i> </a><a href="https://www.linkedin.com/in/bokun-wang-6b7437252/"><i class="fa fa-linkedin-square"></i></a> <a href="https://bokun-wang.github.io/cv.pdf"><i class="fa fa-star ai ai-cv"></i></a> 
-        </font></b></h1>
-        </font></td>
-      </tr>
-    </table>
-    <br />
-    </td>
-  </tr>
-  <tr>
-    <td width="100%" style="padding-left:50px; padding-bottom:50px">
-	<h2>
-        <font face="Helvetica" color="black" size="5.0vw"><b>News</font></b> 
-        </font></h2> 
-<ul>
-    <li, class="fa fa-lightbulb-o">
-    <font face="Helvetica" size="3.0vw"> I will be presenting my work <a href="https://arxiv.org/abs/2312.02277">"An Optimal Single-Loop Algorithm for Convex Finite-Sum Coupled Compositional Stochastic Optimization"</a> at the <a href="https://meetings.informs.org/wordpress/seattle2024/">INFORMS Annual Meeting 2024</a> on October 20 from 4:00 PM to 4:15 PM in Summit 422. <br>  </font>
-    </li>
-    </ul>
-<ul>
-    <li, class="fa fa-lightbulb-o">
-        <font face="Helvetica" size="3.0vw"> Our work <a href="https://arxiv.org/abs/2410.09156">"On Discriminative Probabilistic Modeling for Self-Supervised Representation Learning"</a> has been accepted for an oral presentation at the <a href='https://deepmath-conference.com/'>DeepMath Conference 2024</a>. <br>  </font>
-    </li>
-    </ul>
-</tr>
+<body class="bg-gray-50 text-gray-800">
 
-  <tr>
-    <td width="100%" style="padding-left:50px; padding-bottom:50px">
-	<h2>
-        <font face="Helvetica" color="black" size="5.0vw"><b>Research Overview</font></b> 
-        </font></h2> 
-<img border="0" src="https://bokun-wang.github.io/overview.jpg" style="max-width:100%;height:auto;">
-</tr>
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-900">Bokun Wang</a>
+                </div>
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="index.html#about" class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-200">About</a>
+                    <a href="index.html#research" class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-200">Research</a>
+                    <a href="index.html#publications" class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-200">Publications</a>
+                    <a href="blogs.html" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">Blogs</a>
+                    <a href="index.html#teaching" class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-200">Teaching</a>
+                    <a href="cv.pdf" target="_blank" class="text-gray-600 hover:text-blue-500 transition-colors duration-200">CV</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">About</a>
+                <a href="blogs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">Blog</a>
+                <a href="index.html#research" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">Research</a>
+                <a href="index.html#publications" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">Publications</a>
+                <a href="index.html#teaching" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">Teaching</a>
+                <a href="CV.pdf" target="_blank" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-100">CV</a>
+            </div>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
 
-  <tr>
-    <td width="100%" style="padding-left:50px">
-	<h2>
-        <font face="Helvetica" color="black" size="5.0vw"><b>Manuscripts</font></b> 
-        </font></h2> 
-    <ul>
-        <li, class="fa fa-toggle-right">
-            <font face="Helvetica" size = "3.5vw" color="#3F4142"><b>On Discriminative Probabilistic Modeling for Self-Supervised Representation Learning </b><br>
-        Bokun Wang, Yunwen Lei, Yiming Ying, and Tianbao Yang<br> 
-        Preprint, 2024. <a href="https://arxiv.org/abs/2410.09156">[arxiv]</a> <br></font>
-				<dl class="togList">
-          <dt onclick="tog(this)">
-          <font color="#551A8B"> + abstract</font>
-          </dt>
-          <dd>  
-	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> We study the discriminative probabilistic modeling problem on a continuous domain for (multimodal) self-supervised representation learning. To address the challenge of computing the integral in the partition function for each anchor data, we leverage the multiple importance sampling (MIS) technique for robust Monte Carlo integration, which can recover InfoNCE-based contrastive loss as a special case. Within this probabilistic modeling framework, we conduct generalization error analysis to reveal the limitation of current InfoNCE-based contrastive loss for self-supervised representation learning and derive insights for developing better approaches by reducing the error of Monte Carlo integration. To this end, we propose a novel non-parametric method for approximating the sum of conditional densities required by MIS through convex optimization, yielding a new contrastive objective for self-supervised representation learning. Moreover, we design an efficient algorithm for solving the proposed objective. We empirically compare our algorithm to representative baselines on the contrastive image-language pretraining task. Experimental results on the CC3M and CC12M datasets demonstrate the superior overall performance of our algorithm.</font>           </dd> 
-        </dl></li>
-        </ul>  
+        <!-- About Section -->
+        <section id="about" class="scroll-mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-1">
+                    <img src="./bokun-pic.jpeg" alt="Bokun Wang" class="rounded-lg shadow-md w-full">
+                </div>
+                <div class="md:col-span-2">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-2">Bokun Wang</h1>
+                    <p class="text-lg text-gray-600 mb-4">Postdoctoral Researcher at UT Austin</p>
+                    <div class="space-y-3 text-gray-700 leading-relaxed">
+                        <p>
+                            I am a Postdoctoral Fellow in the <a href="https://www.ece.utexas.edu/">Department of Electrical and Computer Engineering (ECE)</a>  at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, working with <a href="https://users.ece.utexas.edu/~dianam/" class="text-blue-600 hover:underline">Prof. Diana Marculescu</a> and the <a href="https://enyac.org/" class="text-blue-600 hover:underline">EnyAC group</a>. Before that, I received my Ph.D. degree in Computer Science at Texas A&M University, advised by <a href="https://people.tamu.edu/~tianbao-yang/" class="text-blue-600 hover:underline">Prof. Tianbao Yang</a>. 
+                        </p>
+                        <p>
+                            My research interest lies in Efficient Generative AI (Memory | Compute | Data).
+                        </p>
+                        <p>
+                            Email: <a href="mailto:bokun.wang@utexas.edu" class="text-blue-600 hover:underline">bokun.wang@utexas.edu</a>
+                        </p>
+                    </div>
+                     <!-- Social Links -->
+                    <!--
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors" aria-label="Google Scholar">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.242 13.769L0 9.5L12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9 12 9s-5.548 2.249-6.758 4.769zM12 10c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors" aria-label="Twitter">
+                           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-.424.727-.666 1.581-.666 2.477 0 1.61.82 3.027 2.053 3.848-.764-.024-1.482-.234-2.11-.583v.062c0 2.256 1.605 4.14 3.737 4.568-.39.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.307 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.063 1.323 4.513 2.092 7.14 2.092 8.57 0 13.255-7.098 13.255-13.254 0-.202-.005-.403-.014-.602A9.46 9.46 0 0024 4.557z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors" aria-label="LinkedIn">
+                           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition-colors" aria-label="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg>
+                        </a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
 
-        <ul>
-        <li, class="fa fa-toggle-right">
-            <font face="Helvetica" size = "3.5vw" color="#3F4142"><b>ALEXR: An Optimal Single-Loop Algorithm for Convex Finite-Sum Coupled Compositional Stochastic Optimization </b><br>
-        Bokun Wang and Tianbao Yang<br> 
-        Preprint, 2023. <a href="https://arxiv.org/abs/2312.02277">[arxiv]</a> <br></font>
-				<dl class="togList">
-          <dt onclick="tog(this)">
-          <font color="#551A8B"> + abstract</font>
-          </dt>
-          <dd>  
-	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> This paper revisits a class of convex Finite-Sum Coupled Compositional Stochastic Optimization (cFCCO) problems with many applications, including group distributionally robust optimization (GDRO), reinforcement learning, and learning to rank. To better solve these problems, we introduce a unified family of efficient single-loop primal-dual block-coordinate proximal algorithms, dubbed ALEXR. This algorithm leverages block-coordinate stochastic mirror ascent updates for the dual variable and stochastic proximal gradient descent updates for the primal variable. We establish the convergence rates of ALEXR in both convex and strongly convex cases under smoothness and non-smoothness conditions of involved functions, which not only improve the best rates in previous works on smooth cFCCO problems but also expand the realm of cFCCO for solving more challenging non-smooth problems such as the dual form of GDRO. Finally, we present lower complexity bounds to demonstrate that the convergence rates of ALEXR are optimal among first-order block-coordinate stochastic algorithms for the considered class of cFCCO problems.</font>           </dd> 
-        </dl></li>
-        </ul>  
-</tr>
-  <tr>
-    <td width="100%" style="padding-left:50px">
-	<h2>
-        <font face="Helvetica" color="black" size="5.0vw"><b>Selected Publications</font></b> 
-        <a href=pub.html><font face="Helvetica" color="#800000" size="4.5vw"><b>[Full List]</b></a>
-        </font></h2> 
-        <ul>
-            <li, class="fa fa-toggle-right">
-                <font face="Helvetica" size = "3.5vw" color="#3F4142"><b> Finite-Sum Coupled Compositional Stochastic Optimization: Theory and Applications </b><br>
-        Bokun Wang and Tianbao Yang<br> 
-        In Proc. of the 39th International Conference on Machine Learning (ICML), 2022. <br>
-        <a href="https://proceedings.mlr.press/v162/wang22ak.html">[paper]</a> <a href="https://arxiv.org/abs/2202.12396">[arxiv (with updates)]</a> <a href="https://github.com/bokun-wang/my_bib/blob/main/pmlr-v162-wang22ak.bib">[bib]</a> <a href="https://github.com/bokun-wang/SOX">[code]</a> <a href="ICML22-SOX/ICML22-SOX-Poster.pdf">[poster]</a> <a href="ICML22-SOX/ICML22-SOX-compressed.pdf">[slides]</a> <br></font>
-				<dl class="togList">
-          <dt onclick="tog(this)">
-          <font color="#551A8B"> + abstract</font>
-          </dt>
-          <dd>  
-	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E> This paper studies stochastic optimization for a sum of compositional functions, where the inner-level function of each summand is coupled with the corresponding summation index. We refer to this family of problems as finite-sum coupled compositional optimization (FCCO). It has broad applications in machine learning for optimizing non-convex or convex compositional measures/objectives such as average precision (AP), p-norm push, listwise ranking losses, neighborhood component analysis (NCA), deep survival analysis, deep latent variable models, etc., which deserves finer analysis. Yet, existing algorithms and analyses are restricted in one or other aspects. The contribution of this paper is to provide a comprehensive convergence analysis of a simple stochastic algorithm for both non-convex and convex objectives. Our key result is the improved oracle complexity with the parallel speed-up by using the moving-average based estimator with mini-batching. Our theoretical analysis also exhibits new insights for improving the practical implementation by sampling the batches of equal size for the outer and inner levels. Numerical experiments on AP maximization, NCA, and p-norm push corroborate some aspects of the theory.</font>           </dd> 
-        </dl></li>
-        </ul>  
-        
-        <ul>
-            <li, class="fa fa-toggle-right">
-        <font face="Helvetica" size = "3.5vw" color="#3F4142"><b> IntSGD: Adaptive Floatless Compression of Stochastic Gradients</b> <br>
-        Konstantin Mishchenko, Bokun Wang, Dmitry Kovalev, and Peter Richtárik<br> 
-        In Proc. of the 10th International Conference on Learning Representations (ICLR), 2022 (Spotlight). <br>
-         <a href="https://openreview.net/pdf?id=pFyXqxChZc">[paper]</a> <a href="https://arxiv.org/abs/2102.08374">[arxiv]</a> <a href="https://github.com/bokun-wang/my_bib/blob/main/22_intsgd.bib">[bib]</a> <a href="https://github.com/bokunwang1/intsgd">[code]</a> <a href="https://www.konstmish.com/uploads/posters/22-intsgd-poster.pdf">[poster]</a> <a href="https://www.konstmish.com/uploads/slides/22-intsgd-slides.pdf">[slides]</a> <br></font>
-				<dl class="togList">
-          <dt onclick="tog(this)">
-           <font color="#551A8B"> + abstract</font>
-          </dt>
-          <dd>  
-	   <font face = "Verdana" size = "2.0vw" color = #5D6D7E>We propose a family of adaptive integer compression operators for distributed Stochastic Gradient Descent (SGD) that do not communicate a single float. This is achieved by multiplying floating-point vectors with a number known to every device and then rounding to integers. In contrast to the prior work on integer compression for SwitchML by Sapio et al. (2021), our IntSGD method is provably convergent and computationally cheaper as it estimates the scaling of vectors adaptively. Our theory shows that the iteration complexity of IntSGD matches that of SGD up to constant factors for both convex and non-convex, smooth and non-smooth functions, with and without overparameterization. Moreover, our algorithm can also be tailored for the popular all-reduce primitive and shows promising empirical performance.</font>          </dd> 
-        </dl>
-            </li>
-        </ul>	
-</tr>
-<tr>
-    <td width="100%" style="padding-left:50px">
-	<h2><b>
-    <font face="Helvetica" color="black" size="5.0vw">Experience</font></b></h2>
-    <font size = "3.0vw">
-    <ul>
-    <li, class="fa fa-handshake-o">
-    <font face="Helvetica" size="3.0vw">Machine Learning Group, Boston Office, ARM Inc.<br> 
-    Intern advised by 
-    <a href=https://scholar.google.com/citations?user=IQbOdyYAAAAJ&hl=en>Dr. Chuteng Zhou</a> and <a href=https://scholar.google.com/citations?user=Yo_NxlcAAAAJ&hl=tr>Dr. Durmus Alp Emre Acar</a>, May 2023 - August 2023.</font><br> 
-    </li>
-    </ul>
-	    
-    <ul>
-    <li, class="fa fa-handshake-o">
-    <font face="Helvetica" size="3.0vw">King Abdullah University of Science and Technology (KAUST)<br> 
-    Remote research intern advised by 
-    <a href=https://richtarik.org>Prof. Peter Richtárik</a>, September 2020 - August 2021.</font><br> 
-    </li>
-    </ul>
-   
-    <ul>
-    <li, class="fa fa-handshake-o">
-    <font face="Helvetica" size="3.0vw">Department of Mathematics, University of California Davis (UC Davis)</font><br> 
-   <font face="Helvetica" size="3.0vw"> Research assistant advised by <a href=https://www.math.ucdavis.edu/~sqma/index.html>Prof. Shiqian Ma</a>, July 2019 - September 2019.</font><br> 
-    </li>
-    </ul> 
-</tr>
-            
-        <tr>
-    <td width="100%" style="padding-left:50px">
-	<h2><b>
-    <font face="Helvetica" color="black" size="5.0vw">Teaching</font></b></h2> 
-    <ul>
-    <li, class="fa fa-book">
-    <font face="Helvetica" size="3.0vw"> Guest Lecturer, CSCE 689: Optimization for Machine Learning (Fall 2023, instructed by Prof. Tianbao Yang), Texas A&M University.<br>  </font>
-    </li>
-    </ul>
-    <ul>
-    <li, class="fa fa-book">
-    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 32B: Introduction to Data Structures (Winter 2020), University of California Davis.<br>  </font>
-    </li>
-    </ul>
-    <ul>
-    <li, class="fa fa-book">
-    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 154A: Computer Architecture (Fall 2019), University of California Davis.<br>  </font>
-    </li>
-    </ul>
-    <ul>
-    <li, class="fa fa-book">
-    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 170: Introduction to Artificial Intelligence (Spring 2019), University of California Davis.<br>  </font>
-    </li>
-    </ul>
-    <ul>
-    <li, class="fa fa-book">
-    <font face="Helvetica" size="3.0vw"> Teaching assistant, ECS 271: Machine Learning and Data Discovery (Winter 2019), University of California Davis.<br>  </font>
-    </li>
-      </ul>  
-    </font>
-</tr>
+        <div class="border-t border-gray-200 my-12"></div>
+
+        <!-- Research Section -->
+        <section id="research" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Research</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Theory-driven Efficient Algorithms for SSL</h3>
+                    <p class="text-gray-600 mb-4">
+                        This project focuses on developing efficient algorithms for (multi-modal) self-supervised representation learning (SSL) with convergence and generalization guarantees.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://openreview.net/forum?id=LiXbEXRH2L" class="text-blue-600 hover:underline font-medium">GloFND</a>
+                        <a href="https://openreview.net/forum?id=s15HrqCqbr" class="text-blue-600 hover:underline font-medium">DPM</a>
+                        <a href="https://proceedings.mlr.press/v162/wang22ak" class="text-blue-600 hover:underline font-medium">SOX</a>
+                        <a href="https://libauc.org/" class="text-blue-600 hover:underline font-medium">LibAUC</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Efficient Algorithms for Imbalanced and Multi-Instance Medical Image Analysis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Designed memory-efficient and provably convergent algorithms for high-resolution, imbalanced, and multi-instance medical imaging data classification.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://proceedings.mlr.press/v202/zhu23l" class="text-blue-600 hover:underline font-medium">MIDAM</a>
+                        <a href="https://proceedings.mlr.press/v162/zhu22g" class="text-blue-600 hover:underline font-medium">SOPA</a>
+                    </div>
+                </div>
+                 <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <div class="border-t border-gray-200 my-12"></div>
+
+        <!-- Publications Section -->
+        <section id="publications" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recent Publications (<a href="https://dblp.org/pid/207/1922" class="text-blue-600 hover:underline font-medium">Full List</a>)</h2>
+            <div class="space-y-8">
+                <!-- Publication 1 -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-shrink-0 md:w-45">
+                        <img src="glofnd2.png" alt="Teaser for Publication 1" class="rounded-md shadow-sm w-full h-auto md:h-24 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Discovering Global False Negatives On the Fly for Self-supervised Contrastive Learning.</h3>
+                        <p class="text-gray-600">
+                            Vicente Balmaseda, <strong>Bokun Wang</strong>, Ching-Long Lin, and Tianbao Yang
+                        </p>
+                        <p class="text-gray-500 italic">
+                            In Proceedings of the Forty-second International Conference on Machine Learning (ICML), 2025.
+                        </p>
+                        <div class="mt-2 space-x-4">
+                            <a href="https://openreview.net/pdf?id=LiXbEXRH2L" class="text-blue-600 hover:underline font-medium">[PDF]</a>
+                            <a href="https://github.com/vibalcam/GloFND" class="text-blue-600 hover:underline font-medium">[Code]</a>
+                            <a href="https://vicentebalmaseda.com/assets/icml2025-glofnd-poster.pdf" class="text-blue-600 hover:underline font-medium">[Poster]</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-shrink-0 md:w-45">
+                         <img src="data_space.png" alt="Teaser for Publication 2" class="rounded-md shadow-sm w-full h-auto md:h-24 object-cover">
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">On Discriminative Probabilistic Modeling for Self-Supervised Representation Learning</h3>
+                        <p class="text-gray-600">
+                            <strong>Bokun Wang</strong>, Yunwen Lei, Yiming Ying, and Tianbao Yang
+                        </p>
+                        <p class="text-gray-500 italic">
+                            In Proceedings of International Conference on Learning Representations (ICLR), 2025.
+                        </p>
+                        <div class="mt-2 space-x-4">
+                            <a href="https://openreview.net/pdf?id=s15HrqCqbr" class="text-blue-600 hover:underline font-medium">[PDF]</a>
+                            <a href="https://github.com/bokun-wang/NUCLR" class="text-blue-600 hover:underline font-medium">[Code]</a>
+                            <a href="https://docs.google.com/presentation/d/1zj0K1wgGCeKH2f0JNx5il_YngBU7w1RxgoqH_oDBgBU/edit?usp=sharing" class="text-blue-600 hover:underline font-medium">[Slides]</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Add more publications as needed -->
+            </div>
+        </section>
+
+        <div class="border-t border-gray-200 my-12"></div>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="scroll-mt-20">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Teaching</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>
+                    <strong>Guest Lecturer</strong>, CSCE 689: Optimization for Machine Learning (Fall 2023), Texas A&M University.
+                </li>
+                <li>
+                    <strong>Teaching Assistant</strong>, ECS 32B: Introduction to Data Structures (Winter 2020), University of California Davis.
+                </li>
+                <li>
+                    <strong>Teaching Assistant</strong>, ECS 154A: Computer Architecture (Fall 2019), University of California Davis.
+                </li>
+                <li>
+                    <strong>Teaching Assistant</strong>, ECS 170: Introduction to Artificial Intelligence (Spring 2019), University of California Davis.
+                </li>
+                <li>
+                    <strong>Teaching Assistant</strong>, ECS 271: Machine Learning and Data Discovery (Winter 2019), University of California Davis.
+                </li>
+                 <!-- Add more teaching experiences as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; 2025 Bokun Wang. Last updated: August 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for active navigation link highlighting on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 80) { // 80 is header height + a little buffer
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-link-active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('nav-link-active');
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
