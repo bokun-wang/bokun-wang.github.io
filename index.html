@@ -78,7 +78,7 @@
                             I am a Postdoctoral Fellow in the <a href="https://www.ece.utexas.edu/">Department of Electrical and Computer Engineering (ECE)</a>  at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, working with <a href="https://users.ece.utexas.edu/~dianam/" class="text-blue-600 hover:underline">Prof. Diana Marculescu</a> and the <a href="https://enyac.org/" class="text-blue-600 hover:underline">EnyAC group</a>. Before that, I received my Ph.D. degree in Computer Science at Texas A&M University, advised by <a href="https://people.tamu.edu/~tianbao-yang/" class="text-blue-600 hover:underline">Prof. Tianbao Yang</a>. 
                         </p>
                         <p>
-                            My research interest lies in Efficient Generative AI (Memory | Compute | Data).
+                            My research interest lies in Hardware-efficient Generative AI (Memory | Compute | Latency | Energy).
                         </p>
                         <p>
                             Email: <a href="mailto:bokun.wang@utexas.edu" class="text-blue-600 hover:underline">bokun.wang@utexas.edu</a>
@@ -113,7 +113,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Theory-driven Efficient Algorithms for SSL</h3>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Hardware-Efficient Multimodal Generative AI Inference</h3>
+                    <p class="text-gray-600 mb-4">
+                        This project focuses on improving hardware efficiency (latency, memory, energy, etc.) of video and language GenAI inference.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://dennismenn.github.io/lipar/" class="text-blue-600 hover:underline font-medium">LIPAR</a>
+                        <a href="https://arxiv.org/abs/2512.09946" class="text-blue-600 hover:underline font-medium">ELANA</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Theory-driven Efficient SSL Algorithms</h3>
                     <p class="text-gray-600 mb-4">
                         This project focuses on developing efficient algorithms for (multi-modal) self-supervised representation learning (SSL) with convergence and generalization guarantees.
                     </p>
@@ -124,15 +135,27 @@
                         <a href="https://libauc.org/" class="text-blue-600 hover:underline font-medium">LibAUC</a>
                     </div>
                 </div>
-                <!-- Project 2 -->
+                <!-- Project 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Efficient Algorithms for Imbalanced and Multi-Instance Medical Image Analysis</h3>
                     <p class="text-gray-600 mb-4">
-                        Designed memory-efficient and provably convergent algorithms for high-resolution, imbalanced, and multi-instance medical imaging data classification.
+                        This project focuses on memory-efficient and provably convergent algorithms for high-resolution, imbalanced, and multi-instance medical imaging data classification.
                     </p>
                     <div class="flex space-x-4">
                         <a href="https://proceedings.mlr.press/v202/zhu23l" class="text-blue-600 hover:underline font-medium">MIDAM</a>
                         <a href="https://proceedings.mlr.press/v162/zhu22g" class="text-blue-600 hover:underline font-medium">SOPA</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Communication Efficient Distributed and Federated Learning</h3>
+                    <p class="text-gray-600 mb-4">
+                        This project focuses on developing communication-efficient and provably convergent algorithms for distributed and federated learning.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://arxiv.org/abs/2407.02610" class="text-blue-600 hover:underline font-medium">FLFP8</a>
+                        <a href="https://www.jmlr.org/papers/v24/21-1301.html" class="text-blue-600 hover:underline font-medium">MOML</a>
+                        <a href="https://arxiv.org/abs/2102.08374" class="text-blue-600 hover:underline font-medium">IntSGD</a>
                     </div>
                 </div>
                  <!-- Add more projects as needed -->
@@ -143,9 +166,30 @@
 
         <!-- Publications Section -->
         <section id="publications" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recent Publications (<a href="https://dblp.org/pid/207/1922" class="text-blue-600 hover:underline font-medium">Full List</a>)</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recent Publications and Manuscripts (<a href="https://dblp.org/pid/207/1922" class="text-blue-600 hover:underline font-medium">Full List</a>)</h2>
             <div class="space-y-8">
                 <!-- Publication 1 -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-shrink-0 md:w-45">
+                        <video id="video-kittens-34" autoplay muted loop playsinline width="100%"><source src="kittens_cr66.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800">Training-Free Latent Inter-frame Pruning with Attention Recovery.</h3>
+                        <p class="text-gray-600">
+                            Dennis Menn, Yuedong Yang, <strong>Bokun Wang</strong>, Xiwen Wei, Mustafa Munir, Feng Liang, Radu Marculescu, Chenfeng Xu, and Diana Marculescu
+                        </p>
+                        <p class="text-gray-500 italic">
+                            ArXiv Preprint, 2026.
+                        </p>
+                        <div class="mt-2 space-x-4">
+                            <a href="https://arxiv.org/abs/2603.05811" class="text-blue-600 hover:underline font-medium">[PDF]</a>
+                            <a href="https://github.com/DennisMenn/lipar" class="text-blue-600 hover:underline font-medium">[Code]</a>
+                            <a href="https://dennismenn.github.io/lipar/" class="text-blue-600 hover:underline font-medium">[Webpage]</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Publication 2 -->
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="flex-shrink-0 md:w-45">
                         <img src="glofnd2.png" alt="Teaser for Publication 1" class="rounded-md shadow-sm w-full h-auto md:h-24 object-cover">
@@ -162,27 +206,6 @@
                             <a href="https://openreview.net/pdf?id=LiXbEXRH2L" class="text-blue-600 hover:underline font-medium">[PDF]</a>
                             <a href="https://github.com/vibalcam/GloFND" class="text-blue-600 hover:underline font-medium">[Code]</a>
                             <a href="https://vicentebalmaseda.com/assets/icml2025-glofnd-poster.pdf" class="text-blue-600 hover:underline font-medium">[Poster]</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Publication 2 -->
-                <div class="flex flex-col md:flex-row gap-4">
-                    <div class="flex-shrink-0 md:w-45">
-                         <img src="data_space.png" alt="Teaser for Publication 2" class="rounded-md shadow-sm w-full h-auto md:h-24 object-cover">
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-gray-800">On Discriminative Probabilistic Modeling for Self-Supervised Representation Learning</h3>
-                        <p class="text-gray-600">
-                            <strong>Bokun Wang</strong>, Yunwen Lei, Yiming Ying, and Tianbao Yang
-                        </p>
-                        <p class="text-gray-500 italic">
-                            In Proceedings of International Conference on Learning Representations (ICLR), 2025.
-                        </p>
-                        <div class="mt-2 space-x-4">
-                            <a href="https://openreview.net/pdf?id=s15HrqCqbr" class="text-blue-600 hover:underline font-medium">[PDF]</a>
-                            <a href="https://github.com/bokun-wang/NUCLR" class="text-blue-600 hover:underline font-medium">[Code]</a>
-                            <a href="https://docs.google.com/presentation/d/1zj0K1wgGCeKH2f0JNx5il_YngBU7w1RxgoqH_oDBgBU/edit?usp=sharing" class="text-blue-600 hover:underline font-medium">[Slides]</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +242,7 @@
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
         <div class="max-w-5xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-gray-500">
-            <p>&copy; Bokun Wang. Last updated: August 2025.</p>
+            <p>&copy; Bokun Wang. Last updated: April 2026.</p>
         </div>
     </footer>
 
