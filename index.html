@@ -78,7 +78,7 @@
                             I am a Postdoctoral Fellow in the <a href="https://www.ece.utexas.edu/">Department of Electrical and Computer Engineering (ECE)</a>  at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, working with <a href="https://users.ece.utexas.edu/~dianam/" class="text-blue-600 hover:underline">Prof. Diana Marculescu</a> and the <a href="https://enyac.org/" class="text-blue-600 hover:underline">EnyAC group</a>. Before that, I received my Ph.D. degree in Computer Science at Texas A&M University, advised by <a href="https://people.tamu.edu/~tianbao-yang/" class="text-blue-600 hover:underline">Prof. Tianbao Yang</a>. 
                         </p>
                         <p>
-                            My research interest lies in Hardware-efficient Generative AI (Memory | Compute | Latency | Energy).
+                            My research interest lies in the Hardware-efficient Generative AI.
                         </p>
                         <p>
                             Email: <a href="mailto:bokun.wang@utexas.edu" class="text-blue-600 hover:underline">bokun.wang@utexas.edu</a>
@@ -113,7 +113,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Hardware-Efficient Multimodal Generative AI Inference</h3>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Hardware-Efficient GenAI Inference</h3>
                     <p class="text-gray-600 mb-4">
                         This project focuses on improving hardware efficiency (latency, memory, energy, etc.) of video and language GenAI inference.
                     </p>
@@ -126,9 +126,10 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                     <h3 class="text-lg font-semibold text-gray-900 mb-2">Theory-driven Efficient SSL Algorithms</h3>
                     <p class="text-gray-600 mb-4">
-                        This project focuses on developing efficient algorithms for (multi-modal) self-supervised representation learning (SSL) with convergence and generalization guarantees.
+                        Developing efficient algorithms for (multi-modal) self-supervised representation learning (SSL) with convergence and generalization guarantees.
                     </p>
                     <div class="flex space-x-4">
+                        <a href="https://arxiv.org/abs/2602.02877" class="text-blue-600 hover:underline font-medium">SCENT</a>
                         <a href="https://openreview.net/forum?id=LiXbEXRH2L" class="text-blue-600 hover:underline font-medium">GloFND</a>
                         <a href="https://openreview.net/forum?id=s15HrqCqbr" class="text-blue-600 hover:underline font-medium">DPM</a>
                         <a href="https://proceedings.mlr.press/v162/wang22ak" class="text-blue-600 hover:underline font-medium">SOX</a>
@@ -166,14 +167,19 @@
 
         <!-- Publications Section -->
         <section id="publications" class="scroll-mt-20">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recent Publications and Manuscripts (<a href="https://dblp.org/pid/207/1922" class="text-blue-600 hover:underline font-medium">Full List</a>)</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recent Work (<a href="https://dblp.org/pid/207/1922" class="text-blue-600 hover:underline font-medium">Full List</a>)</h2>
             <div class="space-y-8">
                 <!-- Publication 1 -->
                 <div class="flex flex-col md:flex-row gap-4">
-                    <div class="flex-shrink-0 md:w-45">
-                        <video id="video-kittens-34" autoplay muted loop playsinline width="100%"><source src="kittens_cr66.mp4" type="video/mp4">
-                        </video>
-                    </div>
+<div class="flex-shrink-0 md:w-45"> 
+        <video 
+            id="video-kittens-34" 
+            autoplay muted loop playsinline 
+            /* Match image classes: full width, fixed height on desktop, and cover fit */
+            class="rounded-md shadow-sm w-full h-auto md:h-24 object-cover block">
+            <source src="kittens_cr66.mp4" type="video/mp4">
+        </video>
+    </div>
                     <div>
                         <h3 class="font-semibold text-gray-800">Training-Free Latent Inter-frame Pruning with Attention Recovery.</h3>
                         <p class="text-gray-600">
